@@ -1,13 +1,13 @@
 name: yes24_crawler
 	
-  on:
-    schedule:
-      - cron: '*/5 * * * *'
+on:
+  schedule:
+    - cron: '*/5 * * * *'
 	
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v2
       - name: Set up Python
         uses: actions/setup-python@v2
